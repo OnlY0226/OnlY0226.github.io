@@ -8,7 +8,8 @@
     "build": "vuepress build src",
     "docs:clean-dev": "vuepress dev src --clean-cache",
     "dev": "vuepress dev src",
-    "docs:update-package": "pnpm dlx vp-update"
+    "docs:update-package": "pnpm dlx vp-update",
+    "deploy": "sh deploy.sh" 
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.66",
