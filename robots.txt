@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://gitlab.wclsolution.com/demo/sitemap.xml
+Sitemap: https://gitlab.wclsolution.com/sitemap.xml
