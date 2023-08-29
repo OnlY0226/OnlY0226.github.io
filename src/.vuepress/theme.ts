@@ -27,18 +27,12 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "Default footer",
+  footer: "默认页脚",
 
   displayFooter: true,
 
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-    },
-  },
-
   blog: {
-    description: "A FrontEnd programmer",
+    description: "一个前端开发者",
     intro: "/intro.html",
     medias: {
       Baidu: "https://example.com",
@@ -76,8 +70,15 @@ export default hopeTheme({
     },
   },
 
+  encrypt: {
+    config: {
+      "/demo/encrypt.html": ["1234"],
+    },
+  },
+
+  // page meta
   metaLocales: {
-    editLink: "Edit this page on GitHub",
+    editLink: "在 GitHub 上编辑此页",
   },
 
   plugins: {
