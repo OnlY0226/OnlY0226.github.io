@@ -1,6 +1,6 @@
 ---
 home: true
-layout: BlogHome
+layout: BlogHomse
 icon: home
 title: Blog Home
 heroImage: /logo.svg
