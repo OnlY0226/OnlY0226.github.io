@@ -16,6 +16,7 @@ export default hopeTheme({
   iconAssets: "fontawesome-with-brands",
 
   logo: "/logo.svg",
+  favicon: "/favicon.ico",
 
   repo: "https://github.com/OnlY0226/OnlY0226.github.io",
 
