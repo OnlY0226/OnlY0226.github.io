@@ -1,12 +1,11 @@
 ---
 icon: pen-to-square
 date: 2023-08-30
-# category:
-#   - 苹果
-# tag:
-#   - 红
-#   - 大
-#   - 圆
+category:
+  - 前端开发
+tag:
+  - Git
+  - 指令
 order: 1
 ---
 # Git Order
