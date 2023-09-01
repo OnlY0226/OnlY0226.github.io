@@ -1,18 +1,17 @@
 ---
 icon: pen-to-square
 date: 2023-08-30
-# category:
-#   - 苹果
-# tag:
-#   - 红
-#   - 大
-#   - 圆
+category:
+  - 前端开发
+tag:
+  - 面试
 order: 2
 ---
 # 面试题
 ## 作用域问题
 
 ### this指向问题
+1. this指向问题1
 ```
 var length = 10;
 function fn() {
@@ -33,7 +32,7 @@ obj.method(fn, 1, 2, 3, 4, 5, 6);//输出是什么？
 7
 ```
 ::: warning
-　　第一次输出10应该没有问题。我们知道取对象属于除了点操作符还可以用中括号，所以第二次执行时相当于arguments调用方法，this指向arguments，而这里传了两个参数，故输出arguments长度为2。
+　　第一次输出10应该没有问题。我们知道取对象属于除了点操作符还可以用中括号，所以第二次执行时相当于arguments调用方法，this指向arguments，而这里传了7个参数，故输出arguments长度为7。
 
 :::
 
@@ -62,7 +61,59 @@ console.log(a);
 console.log(b);
 
 ```
+### apply，call，bind简单使用
+1. call()、apply()、bind() 都是用来重定义 this 这个对象的！
+``` ts
+  var name = '小王', age = 17;
+  var obj = {
+    name: '小张',
+    objAge: this.age,
+    myFun: function() {
+      console.log(this.name, + "年龄" + this.age)
+    }
+  }
+  var db = {
+    name: '德玛',
+    age: 99
+  }
+```
+::: warning
+  obj.myFun.call(db)；　　　　// 德玛年龄 99
+  obj.myFun.apply(db);　　　 // 德玛年龄 99 
+  obj.myFun.bind(db)();　　　// 德玛年龄 99
+  以上出了 bind 方法后面多了个 () 外 ，结果返回都一致！
 
+  由此得出结论，bind 返回的是一个新的函数，你必须调用它才会被执行。
+:::
+2. 对比call 、bind 、 apply 传参情况下
+
+``` ts
+  var name = '小王', age = 17;
+  var obj = {
+    name: '小张',
+    objAge: this.age,
+    myFun: function(fm,t) {
+      console.log(this.name, + "年龄" + this.age + "来自" + fm + "去" + t)
+    }
+  }
+  var db = {
+    name: '德玛',
+    age: 99
+  }
+```
+::: warning
+  obj.myFun.call(db,'成都','上海')；　　　　 // 德玛 年龄 99  来自 成都去往上海
+  obj.myFun.apply(db,['成都','上海']);      // 德玛 年龄 99  来自 成都去往上海  
+  obj.myFun.bind(db,'成都','上海')();       // 德玛 年龄 99  来自 成都去往上海
+  obj.myFun.bind(db,['成都','上海'])();　　 // 德玛 年龄 99  来自 成都, 上海去往 undefined
+
+  从上面四个结果不难看出:
+call 、bind 、 apply 这三个函数的第一个参数都是 this 的指向对象，第二个参数差别就来了：
+call 的参数是直接放进去的，第二第三第 n 个参数全都用逗号分隔，直接放到后面 obj.myFun.call(db,'成都', ... ,'string' )。
+apply 的所有参数都必须放在一个数组里面传进去 obj.myFun.apply(db,['成都', ..., 'string' ])。
+bind 除了返回是函数以外，它 的参数和 call 一样。
+当然，三者的参数不限定是 string 类型，允许是各种类型，包括函数 、 object 等等！
+:::
 ## 其他
 ### 一个淘宝页面，你如何取得这个页面用到哪几种标签？
 ```
@@ -280,7 +331,7 @@ destroyed(){
 ### 实现简单ajax
 ### 实现简单的闭包
 ### 实现js继承
-### apply，call简单使用
+
 ### 对象高级使用（描述得比较抽象）
 ### echarts
 ### 作用域链、数据类型、引用类型、箭头函数、this指向
