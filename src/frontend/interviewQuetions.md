@@ -6,6 +6,10 @@ category:
 tag:
   - 面试
 order: 2
+head:
+  - - meta
+    - name: keywords
+      content: SEO plugin interviewQuetions
 ---
 # 面试题
 ## 作用域问题

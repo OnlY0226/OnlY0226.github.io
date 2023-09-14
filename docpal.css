@@ -1,0 +1,39 @@
+.login-pf body{
+    background: linear-gradient(to left, #6bdfea, #29b6c4);
+}
+.carf-pf {
+    margin: 0 auto;
+    max-width: 600px;
+    min-width: 300px;
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    background: hsla(0,0%,100%,.6);
+    border: 1px solid hsla(0,0%,100%,.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #0000001a;
+}
+.pf-c-button.pf-m-primary {
+    background-color: #17b2c0;
+    border: #17b2c0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
+    transition: .1s;
+    -webkit-user-select: none;
+    padding: 12px 19px;
+    border-radius: 4px;
+}
+.pf-c-button.pf-m-primary:hover {
+    background-color: #5dc9d3;
+    border-color: #5dc9d3;
+    color: #fff;
+    outline: none;
+}
+.pf-c-form-control:focus {
+    --pf-c-form-control--BorderBottomColor: #17b2c0;
+    padding-bottom: var(--pf-c-form-control--focus--PaddingBottom);
+    border: 1px solid #17b3c0;
+    border-radius: 5px;
+}

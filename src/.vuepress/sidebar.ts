@@ -20,13 +20,5 @@ export default sidebar({
     "intro",
     "slides",
   ],
-  '/tool/': [
-    {
-      text: "工具",
-      icon: "laptop-code",
-      prefix: "tool/",
-      link: "/tool/",
-      children: "structure",
-    }
-  ]
+  '/tool/': "structure"
 });
