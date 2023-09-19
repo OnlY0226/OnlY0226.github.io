@@ -60,7 +60,9 @@ git branch -m 原始名称 新名称
 ```
 git pull origin main 当前分支合并远程分支代码
 git cherry-pick 671efa02b718913a2d1f5222ea5dd48c23228499 当前分支合并某个提交的代码
+ git cherry-pick --abort 终止
 ```
+
 ### 撤销commit
 ```
 git reset --soft HEAD^
