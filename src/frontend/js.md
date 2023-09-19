@@ -3,9 +3,6 @@ icon: pen-to-square
 date: 2023-08-30
 category:
   - 前端开发
-tag:
-  - Git
-  - 指令
 order: 1
 ---
 # js
