@@ -42,3 +42,6 @@ filter (data) {
   return newData
 }
 ```
+
+## 浏览器对象
+### blob

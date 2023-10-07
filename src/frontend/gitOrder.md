@@ -155,7 +155,7 @@ git submodule add git@132.148.160.106:docpal/user-guide.git app/documentation
 ```
 
 
-## npm&yarn
+## npm&yarn&pnpm
 ```
 1.  npm install
     yarn install
@@ -165,6 +165,7 @@ git submodule add git@132.148.160.106:docpal/user-guide.git app/documentation
 | 添加所有依赖 | npm install / npm i  | yarn install | 
 | 添加 | npm install xxx（--save / --save-dev）  | yarn add xxx （' ' / --dev）| 
 | 删除 | npm uninstall xxx  | yarn remove xxx | 
+### pnpm i --shamefully-hoist
 ### 镜像
 ```
 // 设置
