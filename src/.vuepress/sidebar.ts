@@ -9,6 +9,12 @@ export default sidebar({
       prefix: "frontend/",
       children: "structure",
     },
+    {
+      text: "前端开发实用方法",
+      icon: "book",
+      prefix: "frontendBlog/",
+      children: "structure",
+    },
   ],
   '/demo/': "structure",
   '/tool/': "structure"
