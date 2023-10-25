@@ -6,12 +6,9 @@ category:
   - 前端开发实用方法
 ---
 
-## 目录
+## echart 开发
 
-- [Markdown 展示](markdown.md)
-
-- [页面展示](page.md)
-
-- [禁用展示](disable.md)
-
-- [加密展示](encrypt.md)
+1、http://analysis.datains.cn/finance-admin/#/chartLib/all
+2、makeapie 复刻站点1：http://ppchart.com/
+3、Make A Pie复刻站点2：http://www.isqqw.com/ 备用地址http://echarts.isqqw.com/
+4、Make A Pie复刻站点3： http://pie.antcode.net

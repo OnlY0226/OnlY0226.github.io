@@ -15,6 +15,12 @@ export default sidebar({
       prefix: "frontendBlog/",
       children: "structure",
     },
+    {
+      text: "前端开发实用方法",
+      icon: "book",
+      prefix: "vform/",
+      children: "structure",
+    },
   ],
   '/demo/': "structure",
   '/tool/': "structure"

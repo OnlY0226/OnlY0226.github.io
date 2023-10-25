@@ -193,11 +193,24 @@ npm config delete disturl
 | 功能 | 命令行 | 
 | :----: | :---- | 
 | 安装  | sudo dpkg -i google-chrome-stable_current_amd64.deb | 
+| 启动终端  | shift+alt+T | 
 
 ### txt 乱码修复
 ```
 iconv -c -f gb18030 -t UTF-8 nine.txt > newfile1.txt
 ```
+### 清理系统垃圾
+```
+sudo apt-get autoclean
+
+sudo apt-get autoremove
+
+sudo apt-get clean
+```
+### 优化系统启动项
+Ubuntu默认启动了很多服务和应用，这些服务和应用会占用系统资源，导致系统运行变慢。我们可以通过优化系统启动项来提高系统性能。
+
+具体操作：打开系统设置 -> 应用程序 -> 启动，将不必要的应用程序禁止启动即可。
 
 ### vim
 ```
