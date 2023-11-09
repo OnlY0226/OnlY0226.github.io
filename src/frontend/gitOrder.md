@@ -187,6 +187,20 @@ pnpm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/
 npm/pnpm config delete registry
 npm config delete disturl
 ```
+## nvm
+```
+nvm install <version> // 安装指定版本的Node.js。例如，nvm install 12.18.3会安装Node.js的12.18.3版本
+nvm uninstall <version> // 卸载指定版本的Node.js。例如，nvm uninstall 12.18.3会卸载Node.js的12.18.3版本
+nvm reinstall-packages <version> // 重新安装指定版本的Node.js，并重新安装该版本下的全局npm包
+
+nvm ls // 列出已安装的Node.js版本。这个命令会显示所有已安装的Node.js版本，并用一个箭头标记出当前正在使用的版本
+nvm use <version> // 切换到指定版本的Node.js。例如，nvm use 12.18.3会切换到Node.js的12.18.3版本
+nvm current // 显示当前正在使用的Node.js版本。
+
+nvm alias <name> <version> // 创建一个别名，用于指定版本的Node.js。例如，nvm alias default 12.18.3会创建一个名为"default"的别名，指向Node.js的12.18.3版本。
+
+nvm deactivate
+```
 
 
 ## ubantu
