@@ -16,7 +16,7 @@ export default sidebar({
       children: "structure",
     },
     {
-      text: "前端开发实用方法",
+      text: "vform",
       icon: "book",
       prefix: "vform/",
       children: "structure",
