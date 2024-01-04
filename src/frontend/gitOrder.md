@@ -157,8 +157,24 @@ git submodule add git@132.148.160.106:docpal/user-guide.git app/documentation
 
 ## npm&yarn&pnpm
 ```
-1.  npm install
-    yarn install
+npm install xxx@1.0.1 // 指定版本安装
+npm install xxx@latest // 最新版本安装
+npm install xxx@next // 最新版本安装
+npm install xxx@beta // 最新版本安装
+npm install xxx@canary // 最新版本安装
+npm install xxx@tag // 最新版本安装
+npm install xxx@file:../xxx // 本地安装
+npm update [packageName] // npm update 包名
+npm outdated // 查看所有已安装包的最新版本
+npm update-notifier // 检查npm更新
+npm uninstall xxx // 卸载包
+npm cache clean // 清除缓存
+npm config get registry // 查看npm源
+npm config set registry https://registry.npm.taobao.org/ // 设置npm源
+npm config set registry https://registry.npmjs.org/ // 设置npm源
+npm config set registry http://registry.npmjs.org/ // 设置npm源
+npm config set registry http://registry.cnpmjs.org/ // 设置npm源
+
 ```
 | 功能 | npm | yarn | 
 | :----: | :---- | :---- | 
