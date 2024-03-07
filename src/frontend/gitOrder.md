@@ -56,7 +56,7 @@ git branch -d {branchName}  删除本地分支：
 git branch -m 原始名称 新名称
 ```
 
-### 合并代码
+### 合并代码cherry-pick
 
 ```
 git pull origin main 当前分支合并远程分支代码
