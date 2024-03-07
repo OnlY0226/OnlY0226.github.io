@@ -57,6 +57,7 @@ git branch -m 原始名称 新名称
 ```
 
 ### 合并代码
+
 ```
 git pull origin main 当前分支合并远程分支代码
 git cherry-pick 671efa02b718913a2d1f5222ea5dd48c23228499 当前分支合并某个提交的代码
@@ -112,6 +113,7 @@ git cherry-pick 29d9493d
 git push
 ```
 ### 合并commits
+#### git rebase
 1. git rebase -i HEAD~3      // 3 代表想要合并最近3个commit
 命令输入后，会出现
 ```
@@ -142,6 +144,33 @@ git rebase --continue
 如果不想执行或者想放弃的话可以执行：
 git rebase --abort
 1. 如果没有冲突，或者冲突已经解决，会弹出窗口，让你注释掉一些提交记录，这里是让我们编辑自己合并的这些记录的概览，如：完成了什么功能，按照实际情况填写。保存退出，按下 esc 再按 ：然后输入 wq 或 x 保存
+
+#### git commit --amend
+```
+git reset --soft <第一个 commit 的 id>
+git commit --amend
+```
+::: tip
+将当前分支的状态切换到第一个提交中，并保留本地的修改以及暂存区的设置；
+将现在的暂存区的内容直接 amend 到前一个提交（在这里指的就是第一个 commit）。
+:::
+更多配置
+```
+// 如果不希望保留第一个 commit 的作者信息，可以加参数--reset-author：
+git commit --amend --reset-author
+
+// 如果希望不要修改作者和日期，可以加参数--no-edit：
+git commit --amend --no-edit
+
+// 如果希望修改日期，可以加参数--date，例如：
+git commit --amend --date "Mon Aug 1 12:23:11 2022 +0800"
+           
+```
+vim修改
+1. 输入i插入
+2. Esc推出编辑
+3. :wq保存
+4. git push --force-with-lease origin master // 强制推送到远程分支
 ### 子模块
 ```
 // 取消子模块索引
