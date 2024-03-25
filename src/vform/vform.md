@@ -5,6 +5,7 @@ category:
   - 前端开发
 order: 1
 ---
+
 # v-form
 ## 新增组件设置
 1. 在‘/v_form_designer/src/components/form-designer/setting-panel/property-editor/*’新增‘file-type-editor.vue’ editor组件

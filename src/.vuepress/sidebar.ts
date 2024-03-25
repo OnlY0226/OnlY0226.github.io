@@ -23,5 +23,6 @@ export default sidebar({
     },
   ],
   '/demo/': "structure",
-  '/tool/': "structure"
+  '/tool/': "structure",
+  '/menu': "structure",
 });
