@@ -5,9 +5,11 @@
     </div>
     <button v-if="!state.action" @click="startLottery">{{state.result.length > 0 ? '加菜' : '开始点菜'}}</button>  
     <button v-else @click="stopSpinning">停止点菜</button> 
-    <div v-if="state.result.length > 0" class="result">  
-        结果：{{ state.result.join(',') }}  
-        <button  @click="restart">重新点菜</button> 
+    <div v-if="state.result.length > 0" class="result mt_10">  
+        结果：
+        <div >{{ state.result.join(',') }}  </div>
+        
+        <div class="result mt_10"><button  @click="restart">重新点菜</button> </div>
     </div>  
 </div>
 </template>
@@ -67,5 +69,11 @@ watch(()=> props.list, (newValue) => {
 .cur {
     background-color: rgb(157, 171, 245);
     color: #fff;
+}
+.mt_10 {
+    margin-top: 10px;
+}
+.mb_10 {
+    margin-bottom: 10px;
 }
 </style>
