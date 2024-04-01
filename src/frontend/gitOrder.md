@@ -64,10 +64,6 @@ git cherry-pick 671efa02b718913a2d1f5222ea5dd48c23228499 当前分支合并某�
  git cherry-pick --abort 终止
 ```
 
-### 撤销commit
-```
-git reset --soft HEAD^
-```
 ### 提交代码
 ```
 git add .
@@ -80,6 +76,11 @@ git stash  暂存修改
 git stash list 可以看到保存的信息,其中stash@{0}就是刚才保存的标记
 git stash pop stash@{0} 还原暂存的内容
 git stash drop stash@{0} 删除指定栈
+```
+
+### 撤销commit
+```
+git reset --soft HEAD^
 ```
 ### 错误处理
 您尚未结束您的合并（存在 MERGE_HEAD）。 请在合并前先提交您的修改。
