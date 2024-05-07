@@ -44,7 +44,7 @@ const buttonMapping = {
         stop: '停止抽奖',
         start: '开始抽奖',
         restart: '重新抽奖',
-        result: '结果'
+        result: '你亲亲的女朋友将会送你'
     }
 }
 function startLottery() {
