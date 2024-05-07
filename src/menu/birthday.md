@@ -4,8 +4,7 @@ icon: strong
 collapsible: true
 ---
 
-## 肉类
-<OrderFood :list="meatList"/>
+<OrderFood :list="meatList" topic="gift"/>
 
 <script setup lang="ts">
 import OrderFood from '@source/components/OrderFood.vue'

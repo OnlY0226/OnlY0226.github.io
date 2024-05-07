@@ -3,13 +3,13 @@
     <div class="container">
         <div :class="{'menu-item': true, 'cur': item === state.active}" v-for="item in state.list">{{ item }}</div>
     </div>
-    <button v-if="!state.action" @click="startLottery">{{state.result.length > 0 ? '加菜' : '开始点菜'}}</button>  
-    <button v-else @click="stopSpinning">停止点菜</button> 
+    <button v-if="!state.action" @click="startLottery">{{state.result.length > 0 ? buttonMapping[topic].add : buttonMapping[topic].start}}</button>  
+    <button v-else @click="stopSpinning">{{buttonMapping[topic].stop}}</button> 
     <div v-if="state.result.length > 0" class="result mt_10">  
-        结果：
+        {{buttonMapping[topic].result}}:
         <div >{{ state.result.join(',') }}  </div>
         
-        <div class="result mt_10"><button  @click="restart">重新点菜</button> </div>
+        <div class="result mt_10"><button  @click="restart">{{buttonMapping[topic].restart}}</button> </div>
     </div>  
 </div>
 </template>
@@ -17,7 +17,12 @@
 
 <script setup lang="ts">
 import { ref, reactive, toRefs, defineProps, defineEmits, computed, watch } from 'vue'
-const props = defineProps(['list'])
+const props = withDefaults(defineProps<{
+    list: any,
+    topic: 'menu' | 'gift'
+}>(),{
+    topic: 'menu'
+})
 const state = reactive<any>({
     active: '',
     interval: null,
@@ -26,6 +31,22 @@ const state = reactive<any>({
     result: [],
     list: []
 })
+const buttonMapping = {
+    menu: {
+        add: '加菜',
+        stop: '停止点菜',
+        start: '开始点菜',
+        restart: '重新点菜',
+        result: '结果'
+    },
+    gift: {
+        add: '再看看',
+        stop: '停止抽奖',
+        start: '开始抽奖',
+        restart: '重新抽奖',
+        result: '结果'
+    }
+}
 function startLottery() {
     let duration = 0
     state.action = true
