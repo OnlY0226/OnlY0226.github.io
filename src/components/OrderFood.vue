@@ -41,9 +41,9 @@ const buttonMapping = {
     },
     gift: {
         add: '再看看',
-        stop: '停止抽奖',
-        start: '开始抽奖',
-        restart: '重新抽奖',
+        stop: '停',
+        start: '我要选礼物',
+        restart: '我要重新选',
         result: '你亲亲的女朋友将会送你'
     }
 }
