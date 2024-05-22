@@ -82,14 +82,31 @@ git stash drop stash@{0} 删除指定栈
 ```
 git reset --soft HEAD^
 ```
-### 错误处理
-您尚未结束您的合并（存在 MERGE_HEAD）。 请在合并前先提交您的修改。
+### 异常处理
+#### 您尚未结束您的合并（存在 MERGE_HEAD）。 请在合并前先提交您的修改。
 ```
 git merge --abort
 git reset --merge
 git merge
 ```
+#### git cherry-pick error: commit ${commitID} is a merge but no -m option w
+error: commit 41ca46337d8e2be420f5604118c1cd3ea0e88213 is a merge but no -m option was given.
+fatal: cherry-pick failed
+```
+- A - B - E - F -   master
+   \     /
+    C - D           fix
+```
+```
+git cherry-pick ${commitId} -m 2
+``` 
+显然，E 是一个 merge commit。如果你现在要在其他地方 git cherry-pick E，那么就会有歧义，因为 E 既可以是来自 master branch B - E 的改动 (diff)，也可以是来自 fix branch D - E 的
 
+按照这个例子，fix 是被 merge 到 master 的。因此，你 git cherry-pick E -m 1 意思就是使用 B - E 的改动，如果是 git cherry-pick E -m 2 意思就是使用 D - E 的改动
+
+记住一点就好，1 是 “主干”，确切点儿说是被 merge 了代码的 branch，2 是 merge 来源
+
+                    
 ###  版本之间的穿梭回退
 命令方式：
 1. 输入git log 查看所有提交的版本
