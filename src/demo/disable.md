@@ -1,22 +1,22 @@
 ---
 title: 布局与功能禁用
 icon: gears
-order: 3
+order: 4
 category:
   - 使用指南
 tag:
   - 禁用
 
-# navbar: false
-# sidebar: false
+navbar: false
+sidebar: false
 
-# breadcrumb: false
-# pageInfo: false
-# contributors: false
-# editLink: false
-# lastUpdated: false
+breadcrumb: false
+pageInfo: false
+contributors: false
+editLink: false
+lastUpdated: false
 prev: false
-# next: false
+next: false
 comment: false
 footer: false
 

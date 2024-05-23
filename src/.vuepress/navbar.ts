@@ -6,10 +6,10 @@ export default navbar([
   {
     text: "工具",
     icon: "pen-to-square",
-    prefix: "/",
+    prefix: "/tool/",
     children: [
-      "tool",
-      "demo",
+      "recommendation",
+      // "demo",
       {
         text: "V2 文档",
         icon: "book",

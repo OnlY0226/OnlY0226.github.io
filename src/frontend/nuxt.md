@@ -60,7 +60,7 @@ pnpm run dev
 4. 访问
 
 打开本地链接 http://localhost:3000/ 就可以开始访问了
-![localhost3000](/assets/images/localhost3000.png)
+<!-- ![localhost3000](/assets/images/localhost3000.png) -->
 ### 新建常用目录
 #### 1. 新建app(src)目录
 ```
