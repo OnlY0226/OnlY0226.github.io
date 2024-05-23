@@ -1,1 +1,0 @@
-import{_ as t}from"./plugin-vue_export-helper-c27b6911.js";import{o as a,c as r,b as e,e as o}from"./app-4371a464.js";const s={},c=e("h1",{id:"菜谱",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#菜谱","aria-hidden":"true"},"#"),o(" 菜谱")],-1),n=[c];function _(d,i){return a(),r("div",null,n)}const l=t(s,[["render",_],["__file","summary.html.vue"]]);export{l as default};
