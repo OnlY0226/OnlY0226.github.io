@@ -42,7 +42,12 @@ filter (data) {
   return newData
 }
 ```
-
+### 判断交集
+```
+var list1 = [1,2,3,4,5,6];
+var list2 = [6,7,8,9,10,11];
+(list1.length + list2.length) !== new Set([...list1,...list2]).size
+```
 ## 浏览器对象
 ### blob
 
