@@ -45,6 +45,7 @@ git push origin pdfPages 创建远程分支
 
 git push --set-upstream origin pdfPages 本地分支关联到远程某分支
 
+git fetch origin virtual-folder
 git checkout -b virtual-folder  origin/virtual-folder 创建本地分支关联远程分支并切换分支
 
 在删除分支前确保代码已经合到主分支上了
