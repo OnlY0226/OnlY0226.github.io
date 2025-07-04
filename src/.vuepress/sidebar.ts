@@ -22,7 +22,8 @@ export default sidebar({
       children: "structure",
     },
   ],
-  '/demo/': "structure",
-  '/tool/': "structure",
-  '/menu': "structure",
+  "/demo/": "structure",
+  "/tool/": "structure",
+  "/menu": "structure",
+  "/gong/": "structure",
 });
