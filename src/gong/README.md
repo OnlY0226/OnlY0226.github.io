@@ -1,11 +1,12 @@
 ---
 title: 公务员
 index: false
-icon: laptop-code
+icon: book-reader
 category:
   - 使用指南
 ---
 
 ## 目录
 
-- [加密展示](dili.md)
+- [地理](dili.md)
+- [好词好句](haocihaojv.md)
