@@ -10,4 +10,4 @@ tag:
 
 # 地理
 
-![Alt text](image.png)
+![中国地理省区域划分](img/中国地理省区域划分.png)
