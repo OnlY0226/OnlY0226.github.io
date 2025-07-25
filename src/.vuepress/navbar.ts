@@ -18,5 +18,5 @@ export default navbar([
       "menu",
     ],
   },
-  "/gong/",
+  // "/gong/",
 ]);

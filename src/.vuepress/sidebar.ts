@@ -22,7 +22,7 @@ export default sidebar({
       children: "structure",
     },
   ],
-  "/demo/": "structure",
+  // "/demo/": "structure",
   "/tool/": "structure",
   "/menu": "structure",
   "/gong/": "structure",
